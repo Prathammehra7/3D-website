@@ -1,6 +1,6 @@
 import { ComputersCanvas } from "./Item";
 
-const Hero = () => {
+const Hello = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <ComputersCanvas />
@@ -8,4 +8,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hello;

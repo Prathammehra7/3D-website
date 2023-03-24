@@ -3,16 +3,16 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
  
 const Computers = () => {
-const computer = useGLTF('./desktop_pc/scene.gltf')
+const computer = useGLTF('./planet/scene.gltf')
 
   return (
     <mesh>
-      <hemisphereLight/>
+      <hemisphereLight/> 
       <pointLight/>
       <primitive 
        object={computer.scene}
-       scale={2.75}
-        position={[0, -2.25, 0.05]}
+       scale={4.75}
+        position={[0, 0.001, 0.05]}
         rotation={[-0.03,  20.001, -0.001]}
       />
     </mesh>
